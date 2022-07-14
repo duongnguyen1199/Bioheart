@@ -1,0 +1,109 @@
+.slide {
+  flex: 1;
+  min-height: 100vh;
+  background: url(../../assets/img/SignIn/Background.jpg) no-repeat;
+  background-size: cover;
+
+  &__img {
+    height: 400px;
+    margin-bottom: 20px;
+
+    animation: appear 2s;
+  }
+
+  &__title {
+    animation: appear2 2s;
+  }
+
+  &__img,
+  &__logo {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__logo {
+    height: 37px;
+    margin-top: 24px;
+  }
+}
+
+.container {
+  width: 70%;
+  margin: 44px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.list__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  background: #d2d4d6;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.active {
+  width: 32px;
+  background: var(--primary-color);
+  animation: active 2s;
+}
+
+.nonactive {
+  animation: nonactive 2s;
+}
+
+// Animation
+@keyframes disappear {
+  from {
+    transform: scale(1) translateX(0);
+  }
+  to {
+    transform: scale(0) translateX(-100%);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0) translateX(100%);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes appear2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes active {
+  from {
+    width: 6px;
+    background: #d2d4d6;
+  }
+  to {
+    width: 32px;
+    background: var(--primary-color);
+  }
+}
+
+@keyframes nonactive {
+  from {
+    width: 32px;
+    background: var(--primary-color);
+  }
+  to {
+    width: 6px;
+    background: #d2d4d6;
+  }
+}

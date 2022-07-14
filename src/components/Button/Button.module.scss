@@ -1,0 +1,59 @@
+.wrapper {
+  padding: 9px;
+  border-radius: 40px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.primary {
+  width: 100%;
+  margin: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.outline {
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.google {
+  color: var(--google-color);
+  border: 1px solid var(--google-color);
+}
+
+.facebook {
+  color: var(--facebook-color);
+  border: 1px solid var(--facebook-color);
+}
+
+.apple {
+  color: var(--apple-color);
+  border: 1px solid var(--apple-color);
+}
+
+.move {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.move + .move {
+  margin-left: 10px;
+}
+
+.disabled {
+  pointer-events: none;
+  color: var(--disable-color);
+  border: 1px solid var(--disable-color);
+}
+
+.icon {
+  margin: 0 10px;
+}

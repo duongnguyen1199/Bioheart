@@ -1,0 +1,57 @@
+.formsignin {
+  width: 386px;
+}
+
+.container {
+  margin: 44px;
+}
+
+.form {
+  &__title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  &__desc {
+    margin: 24px 0;
+  }
+
+  &__line {
+    text-align: center;
+    position: relative;
+  }
+
+  &__line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border: 1px solid #e6e9eb;
+    height: 0;
+    width: 65.5px;
+  }
+
+  &__line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    border: 1px solid #e6e9eb;
+    height: 0;
+    width: 65.5px;
+  }
+}
+
+.btn__forgot_password {
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: right;
+  display: block;
+}
+
+.link--conect {
+  color: #2d91e9;
+  font-weight: 400;
+}
